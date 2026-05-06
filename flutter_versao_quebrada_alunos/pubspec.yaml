@@ -1,0 +1,20 @@
+name: versao_quebrada_aula11
+description: Versão propositadamente ruim para otimização - Aula 11
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Dependência adicionada para o cache e otimização das imagens
+  cached_network_image: ^3.3.1 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
