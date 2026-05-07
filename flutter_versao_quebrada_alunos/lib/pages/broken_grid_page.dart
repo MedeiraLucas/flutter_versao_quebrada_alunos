@@ -4,7 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 class BrokenGridPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // A lista foi removida, pois o GridView.builder gerencia o índice nativamente
+    
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('BOM — GridView.builder')),

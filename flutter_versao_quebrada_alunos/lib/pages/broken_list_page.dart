@@ -13,7 +13,7 @@ class BrokenListPage extends StatelessWidget {
           itemCount: 200, // Total de itens na lista
           itemBuilder: (context, i) {
             return Padding(
-              padding: const EdgeInsets.all(16), // 3. Modificador const adicionado
+              padding: const EdgeInsets.all(16), 
               child: Column(
                 children: [
                   // 2. Image.network substituído por CachedNetworkImage
@@ -24,10 +24,10 @@ class BrokenListPage extends StatelessWidget {
                     ),
                     errorWidget: (context, url, error) => const Icon(Icons.error),
                     fit: BoxFit.cover,
-                    // Redimensionamento na memória para evitar Out of Memory (OOM)
+                    // Redimensionamento na memória
                     memCacheWidth: 400, 
                   ),
-                  const SizedBox(height: 12), // 3. Modificador const adicionado
+                  const SizedBox(height: 12), 
                   Text('Item $i'),
                 ],
               ),
