@@ -23,17 +23,17 @@ class BrokenGridPage extends StatelessWidget {
                   Expanded(
                     // 2. Trocado Image.network por CachedNetworkImage
                     child: CachedNetworkImage(
-                      imageUrl: 'https://picsum.photos/800/600?random=$i', // Adicionado random para evitar cache do mesmo frame para todos
+                      imageUrl: 'https://picsum.photos/800/600?random=$i', 
                       placeholder: (context, url) => const Center(
                         child: CircularProgressIndicator(),
                       ),
                       errorWidget: (context, url, error) => const Icon(Icons.error),
                       fit: BoxFit.cover,
-                      // Dica crucial: redimensiona a imagem na memória para economizar RAM
+                     
                       memCacheWidth: 300, 
                     ),
                   ),
-                  Text('Item $i'), // 3. Texto reaproveita a variável 'i' do builder
+                  Text('Item $i'),
                 ],
               ),
             );
